@@ -12,49 +12,55 @@
 <body>
 
     <!-- navbar-->
-    <div class="container">
+    <div class="container main">
         <header>
             <nav>
                 <div class="header__logo">
                     <h1><img src="" alt=""></h1>
                 </div>
-                <ul class="header__list">
-                    <li>Home</li>
-                    <li>All products</li>
-                    <li>About</li>
+                <ul class="header__list navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></span></a> </li>
+                    <li class="nav-item"><a class="nav-link" href="allproducts.html">All products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
 
             </nav>
-            <div class="header__img w-100"><img src="./images/pastries.jpg" alt=""></div>
+
+            <!-- banner-->
+            <div class="header__img w-100 d-flex flex-row banner px-0 justify-content-end"><img src="./images/pastries.jpg" class="my-3 mr-5 img-fluid logo" alt="pastries"></div>
         </header>
 
-        <div class="products">
-            <h2>Browse Our Products</h2>
-            <div class="products__content">
-                <div class="inline w-30">
-                    <div><img src="" alt=""></div>
+        <!--3 blocks options-->
+        <div>
+            <div class="products d-flex flex-column mt-5 mb-3 px-5">
+                <h2 class="title">Browse Our Products</h2>
+            </div>
+
+            <div class="products__content d-flex flex-row justify-content-around my-2 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="d-flex flex-row justify-content-around my-2 flex-wrap mb-3 mb-md-0"><img src="images/bread.jpg" class="w-75 rounded shadow mb-3 img-fluid" alt="bread"></div>
                     <div>
                         <h3>All bread</h3>
-                        <p>See all bread we have to offer</p>
-                        <button>View all breads</button>
+                        <p class="text-muted"><small>See all bread we have to offer</small></p>
+                        <a href="allproducts.html" class="btn btn-outline-info btn-sm">View all breads</a>
                     </div>
                 </div>
 
-                <div class="inline">
-                    <div><img src="./images/avocado.jpg" alt=""></div>
+                <div class="">
+                    <div class="d-flex flex-row justify-content-around my-2 flex-wrap mb-3 mb-md-0"><img src="images/bread.jpg"><img src="./images/avocado.jpg" class="w-75 rounded shadow mb-3 img-fluid" alt="fruits"></div>
                     <div>
                         <h3>All fruits and vegetables</h3>
-                        <p>We have ecological fruits and vegetables to offer too</p>
-                        <button>View all fruits and vergies</button>
+                        <p class="text-muted"><small>We have ecological fruits and vegetables to offer too</small></p>
+                        <a href="allprod.html" class="btn btn-outline-info btn-sm">View all fruits and vergies</a>
                     </div>
 
                 </div>
-                <div class="inline w-30">
-                    <div><img src="" alt=""></div>
+                <div class="">
+                    <div class="d-flex flex-row justify-content-around my-2 flex-wrap mb-3 mb-md-0"><img src="images/croissants.jpg" alt=""></div>
                     <div>
                         <h3>Sweets and pizza</h3>
-                        <p>Do you want something sweet or pizza? We have it.</p>
-                        <button>View all sweets and pizza</button>
+                        <p class="text-muted"><small>Do you want something sweet or pizza? We have it.</small></p>
+                        <a href="" class="btn btn-outline-info btn-sm">View all sweets and pizza</a>
                     </div>
                 </div>
 
