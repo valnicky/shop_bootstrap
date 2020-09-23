@@ -14,7 +14,7 @@
     <!-- navbar-->
     <div class="container main">
         <header>
-            <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="header__logo">
                     <h1><img src="" alt=""></h1>
                 </div>
@@ -27,7 +27,8 @@
             </nav>
 
             <!-- banner-->
-            <div class="header__img w-100 d-flex flex-row banner px-0 justify-content-end"><img src="./images/pastries.jpg" class="my-3 mr-5 img-fluid logo" alt="pastries"></div>
+            <div class="header__img w-100 h-25 d-flex flex-row banner px-0 justify-content-end"><img src="./images/pastries.jpg" class="w-100 h-100" alt="pastries"></div>
+
         </header>
 
         <!--3 blocks options-->
@@ -43,7 +44,17 @@
                     <div>
                         <h3>All bread</h3>
                         <p class="text-muted"><small>See all bread we have to offer</small></p>
-                        <a href="allproducts.html" class="btn btn-outline-info btn-sm">View all breads</a>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <a class="btn btn-outline-info btn-sm" href="breads.html" data-toggle="dropdown">View All Bread</a>
+                        <button class="btn btn-outline-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown"><span class="sr-only">Toggle dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Bread</a>
+                            <a href="#" class="dropdown-item">Cereal Bread</a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -52,16 +63,35 @@
                     <div>
                         <h3>All fruits and vegetables</h3>
                         <p class="text-muted"><small>We have ecological fruits and vegetables to offer too</small></p>
-                        <a href="allprod.html" class="btn btn-outline-info btn-sm">View all fruits and vergies</a>
+
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-outline-info btn-sm" href="fruitsandvegetables.html" data-toggle="dropdown">View All Fruits/Vegetables</a>
+                        <button class="btn btn-outline-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown"><span class="sr-only">Toggle dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Fruits</a>
+                            <a href="#" class="dropdown-item">Vegetables</a>
+
+                        </div>
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="d-flex flex-row justify-content-around my-2 flex-wrap mb-3 mb-md-0"><img src="./images/croissant.jpg" class="w-75 rounded shadow mb-3 img-fluid" alt="sweets"></div>
+                    <div class="d-flex flex-row justify-content-around my-2 flex-wrap mb-3 mb-md-0" style="width: 229px;"><img src="./images/croissant.jpg" class=" rounded shadow mb-3 img-fluid" alt="sweets"></div>
                     <div>
                         <h3>Sweets and pizza</h3>
-                        <p class="text-muted"><small>Do you want something sweet or pizza? We have it.</small></p>
-                        <a href="" class="btn btn-outline-info btn-sm">View all sweets and pizza</a>
+                        <p class="text-muted"><small>Something sweet or pizza? We have it.</small></p>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <a class="btn btn-outline-info btn-sm" href="sweatsandpizza" data-toggle="dropdown">View All Sweats and Pizza</a>
+                        <button class="btn btn-outline-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown"><span class="sr-only">Toggle dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Sweats</a>
+                            <a href="#" class="dropdown-item">Pizza</a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -74,10 +104,10 @@
             <p class="px-3 text-muted">"For many years, Valery has been baking the most delicious products at het home, and sell organic food. In 2013, we opened our first store in Madrid, in a cosy little street near the Plaza Mayor. People from all over the world fell in love with our products.. The store became a success in no time."</p>
         </div>
 
-        <footer>
-            <p>Our address is</p>
-            <p>Plaza Mayor 555 Madrid Spain</p>
-            <p>@2020 Valery's Shop - All rights reserved</p>
+        <footer class="">
+            <p class="text-center">Our address is</p>
+            <p class="text-center">Plaza Mayor 555 Madrid Spain</p>
+            <p class="text-center">@2020 Valery's Shop - All rights reserved</p>
         </footer>
     </div>
 

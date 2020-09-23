@@ -12,7 +12,7 @@ body,
 
 header {
     width: 100%;
-    background-color: purple;
+    background-color: #A593C2;
     color: #fff;
 }
 
@@ -23,8 +23,4 @@ nav {
 .header__list li {
     display: inline-block;
     margin-left: 2em;
-}
-
-.header__img {
-    width: 100%;
 }
