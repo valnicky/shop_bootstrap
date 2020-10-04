@@ -16,6 +16,10 @@ header {
     color: #fff;
 }
 
+.sansita {
+    font-family: 'Sansita Swashed', cursive;
+}
+
 nav {
     padding-top: 2em;
 }
@@ -23,4 +27,5 @@ nav {
 .header__list li {
     display: inline-block;
     margin-left: 2em;
+    text-decoration: none;
 }

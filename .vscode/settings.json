@@ -1,0 +1,13 @@
+{
+    "cSpell.enableFiletypes": [
+        "!typescriptreact",
+        "coffeescript",
+        "ignore",
+        "jsx",
+        "jsx-attr",
+        "jsx-tags",
+        "sass",
+        "sql",
+        "xml"
+    ]
+}

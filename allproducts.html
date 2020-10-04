@@ -5,46 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valery's Shop</title>
-    <!--   css files -->-->
+    <!--   css files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container main">
         <header>
-            <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="header__logo">
                     <h1><img src="" alt=""></h1>
                 </div>
-                <ul class="header__list">
-                    <li>Home</li>
-                    <li>All products</li>
-                    <li>About</li>
+                <ul class="header__list navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></span></a> </li>
+                    <li class="nav-item"><a class="nav-link" href="allproducts.html">All products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 </ul>
 
             </nav>
             <div class="header__img w-100">
-                <h2>All Products</h2>
+                <h2 class="sansita text-center">All Products</h2>
             </div>
         </header>
 
-        <div>
-            <h2>All kinds of Products</h2>
-            <ul>
-                <li>
-                    <div>
-                        <div>
-                            <img src="" alt="">
+        <div class="pl-5 pr-5">
+            <h2 class="sansita mt-3 mb-5">All kinds of Products</h2>
+            <ul class="w-100">
+                <li class="d-flex w-100 pb-3 flex-row border-bottom">
+                    <div class="w-60 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-25 m-0">
+                            <img class="w-100" src="images/pastries.jpg" alt="pastries">
                         </div>
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                        <div class="ml-3 w-40">
+                            <h3 class="bold">Pastries</h3>
+                            <p>Plain pleasure.</p>
                         </div>
                     </div>
-                    <div>
-                        <p></p>
-                        <button></button>
+                    <div class="w-25 pl-5">
+                        <p>$10.50</p>
+                        <button>Learn more</button>
                     </div>
                 </li>
                 <li>
