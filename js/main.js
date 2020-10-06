@@ -16,9 +16,10 @@ $(document).ready(function () {
     offset: 70
   });
   
-  //popover
+  //pop over
   $('[data-toggle="popover"]').popover({
-      
+      trigger: 'hover',
+      html: true
   });
   
 });
