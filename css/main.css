@@ -10,6 +10,20 @@ body,
     width: 100%;
 }
 
+.main {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0, 0, 50, .3);
+}
+
+.toast {
+    color: grey;
+    background-color: #fff;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
 header {
     width: 100%;
     background-color: #A593C2;

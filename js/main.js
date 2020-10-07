@@ -3,8 +3,8 @@ let tooltipButton = document.getElementById('tooltipButton');
 $(document).ready(function () {
   //dropdown options
   $(".dropdown-toggle").dropdown({
-    offset: -90,
-    flip: false,
+    "offset": -90,
+    "flip": false,
   });
 
   //tooltip
@@ -21,8 +21,17 @@ $(document).ready(function () {
   //pop over
   $('[data-toggle="popover"]').popover({
     trigger: "hover",
-    html: true,
+    html: true
   });
+
+//toast
+$('.toast').toast({
+  delay: 5000,
+  autohide: false
+});
+  
+  
+  
 });
 
 //popovers
@@ -40,3 +49,10 @@ $('[data-toggle="tooltip"]').on('hide.bs.tooltip', function() {
   tooltipButton.innerHTML = 'Show Tooltips';
 })
 
+let salesMessage = setInterval(toastNotify, 3000);
+
+function toastNotify() {
+  $('.toast').toast('show');
+  
+  clearInterval(salesMessage);
+}
