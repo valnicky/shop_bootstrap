@@ -26,7 +26,6 @@ $(document).ready(function () {
 });
 
 //popovers
-
 function viewPopovers() {$('#pop1').popover('toggle');}
 
 function showTooltips() {
