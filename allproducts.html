@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container main">
+    <div class="container-fluid main">
         <header class=" bg-gradient">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="header__logo">
@@ -37,8 +37,14 @@
             </div>
         </header>
 
-        <div class="pl-5 pr-5">
+        <div class="pl-5 pr-5 ">
+
             <h2 class="sansita mt-3 mb-5 font-weight-bold">All kinds of Products</h2>
+
+            <div class="d-flex flex-column my-3 px-3">
+                <button type="button" onclick="viewPopovers()" class="btn btn-secondary">View Popsover</button>
+            </div>
+
             <ul class="w-100">
 
                 <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
@@ -53,7 +59,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$6.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about croissants" data-content="You can see <b>more</b> about croissants here.<img src='images/croissant.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -69,7 +75,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$10.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about pastries" data-content="You can see <b>more</b> about pastries here">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about pastries" data-content="You can see <b>more</b> about pastries here.<img src='images/pastries.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -85,7 +91,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$10.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about pastries stars" data-content="You can see <b>more about pastries stars</b>here">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about pastries stars" data-content="You can see <b>more about pastries stars</b> here <img src='images/stars640.png' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -101,7 +107,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$4.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about cereal bread" data-content="You can see <b>more</b> about cereal bread here">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about cereal bread" data-content="You can see <b>more</b> about cereal bread here <img src='images/cereal_bread.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -117,7 +123,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about white bread" data-content="You can see <b>more</b> about white bread here <img src='images/bread.jpg' class=''>">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about white bread" data-content="You can see <b>more</b> about white bread here <img src='images/bread.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -133,7 +139,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$15.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about american pizzas" data-content="You can see <b>more</b> about pizzas here.<img src='images/american.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -149,7 +155,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$5.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about olives" data-content="You can see <b>more</b> about olives here.<img src='images/olives.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -165,7 +171,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$1.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about spicy" data-content="You can see <b>more</b> abou spice food here.<img src='images/appetite.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -181,7 +187,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$6.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about avocado" data-content="You can see <b>more</b> about avocados here.<img src='images/avocado.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -197,7 +203,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about apples" data-content="You can see <b>more</b> about apples here.<img src='images/apple.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -213,7 +219,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$1.80</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about broccoli" data-content="You can see <b>more</b> about broccoli here.<img src='images/broccoli.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -229,7 +235,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.70</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about butter" data-content="You can see <b>more</b> about butter here.<img src='images/butter.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -245,7 +251,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.80</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about donuts" data-content="You can see <b>more</b> about donuts here.<img src='images/donuts.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
@@ -261,7 +267,7 @@
                     </div>
                     <div class="col-3 pl-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
-                        <button class="w-100 small-btn btn-outline-secondary btn">Learn more</button>
+                        <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about bananas" data-content="You can see <b>more</b> about bananas here.<img src='images/banana.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
