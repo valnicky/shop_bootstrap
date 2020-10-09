@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valery's Shop</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -71,18 +72,22 @@
     </div>
     </div>
 
-    <footer>
-        <footer class="small">
-            <p class="text-center mb-0 text-muted font-weight-bold">Our address is</p>
-            <p class="text-center mb-0 text-muted">Plaza Mayor 555 Madrid Spain</p>
-            <p class="text-center text-muted">@2020 Valery's Shop - All rights reserved</p>
-        </footer>
-    </footer>
+    <div class="d-flex flex-row px-5 py-2 justify-content-center">
+        <button class="btn btn-outline-secondary mr-2" onclick="orderSlide('prev')">Prev</button>
+        <img src="images/broccoli.jpg" alt="" class="img-fluid mr-2 thumbnail" onclick="gotoThumbnails(0)">
+        <img src="images/olives.jpg" alt="" class="img-fluid mr-2 thumbnail" onclick="gotoThumbnails(1)">
+        <img src="images/banana.jpg" alt="" class="img-fluid thumbnail mr-2" onclick="gotoThumbnails(2)">
+        <button class="btn btn-outline-secondary" onclick="orderSlide('next')">Next</button>
     </div>
 
 
+    <footer class="small">
+        <p class="text-center mb-0 text-muted font-weight-bold">Our address is</p>
+        <p class="text-center mb-0 text-muted">Plaza Mayor 555 Madrid Spain</p>
+        <p class="text-center text-muted">@2020 Valery's Shop - All rights reserved</p>
+    </footer>
 
-
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -53,3 +53,14 @@ nav {
     background-color: rgba(0, 0, 0, .2);
     border-radius: 25px;
 }
+
+.thumbnail {
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+}
+
+.mainrecipe {
+    height: 600px;
+    overflow: scroll;
+}

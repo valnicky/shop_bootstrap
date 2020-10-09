@@ -86,3 +86,12 @@ $('#history').on('shown.bs.collapse', function() {
 $('#history').on('hidden.bs.collapse', function() {
     showMore.innerHTML = 'Show More';
 })
+
+//carousel
+function gotoThumbnails(e){
+    $('.carousel').carousel(e);
+}
+
+function orderSlide(e){
+    $('.carousel').carousel(e);
+}
