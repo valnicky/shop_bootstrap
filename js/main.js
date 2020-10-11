@@ -41,6 +41,11 @@ $(document).ready(function() {
         interval: 3000
     });
 
+    //modal
+    $('.modal').modal({
+show: false,
+backdrop: 'static'
+    })
 
 });
 
@@ -88,10 +93,16 @@ $('#history').on('hidden.bs.collapse', function() {
 })
 
 //carousel
-function gotoThumbnails(e){
+function gotoThumbnails(e) {
     $('.carousel').carousel(e);
 }
 
-function orderSlide(e){
+function orderSlide(e) {
     $('.carousel').carousel(e);
 }
+
+$('[data-spy="scroll"]').on('activate.bs.scrollspy', function(e, obj) {
+    if (obj.relatedTarget == "#section2") {
+        alert('Section 2');
+    }
+});
