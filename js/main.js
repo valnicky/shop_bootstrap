@@ -1,5 +1,6 @@
 let tooltipButton = document.getElementById('tooltipButton');
 let showMore = document.getElementById('showMore');
+let video1 = document.getElementById('video1');
 
 $(document).ready(function() {
     //dropdown options
@@ -105,4 +106,21 @@ $('[data-spy="scroll"]').on('activate.bs.scrollspy', function(e, obj) {
     if (obj.relatedTarget == "#section2") {
         alert('Section 2');
     }
+});
+
+video1.onpause = function(){
+    $('#about1').modal('toggle');
+}
+
+function resumeVideo(){
+    $('#about1').modal('toggle');
+    video1.play();
+}
+
+$('.modal').on('shown.bs.madal', function(e) {
+    video1.pause();
+});
+
+$('.modal').on('hidden.bs.modal', function(e) {
+    video1.play();
 });
