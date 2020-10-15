@@ -43,6 +43,18 @@ nav {
     text-decoration: none;
 }
 
+.letters .small {
+    font-size: 1rem;
+}
+
+.letters .medium {
+    font-size: 1.3rem;
+}
+
+.letters .large {
+    font-size: 1.6rem;
+}
+
 .shadow {
     -webkit-box-shadow: 2px 2px 11px 2px rgba(102, 102, 102, 0.51);
     -moz-box-shadow: 2px 2px 11px 2px rgba(102, 102, 102, 0.51);
