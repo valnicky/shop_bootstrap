@@ -126,22 +126,25 @@ $(".modal").on("hidden.bs.modal", function (e) {
 
  
 function besmall() {
-    localStorage.setItem("small","1rem");
-    let small = localStorage.getItem("small");
+localStorage.clear();
+    localStorage.setItem("text","1rem");
+    let small = localStorage.getItem("text");
  let grow =  document.getElementById('grow');
   grow.style.fontSize = small;
 }
 
 function bemedium() {
-    localStorage.setItem("medium", "1.3rem");
-      let medium = localStorage.getItem("medium");
+   localStorage.clear();
+    localStorage.setItem("text", "1.3rem");
+      let medium = localStorage.getItem("text");
   let grow =  document.getElementById('grow');
   grow.style.fontSize = medium;
 }
 
 function belarge() {
-    localStorage.setItem("large", "1.6rem");
-      let large = localStorage.getItem("large");
+    localStorage.clear();
+    localStorage.setItem("text", "1.6rem");
+      let large = localStorage.getItem("text");
   let grow =  document.getElementById('grow');
   grow.style.fontSize = large;
 }
