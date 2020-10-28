@@ -148,3 +148,11 @@ function belarge() {
   let grow =  document.getElementById('grow');
   grow.style.fontSize = large;
 }
+
+function getActive(elem){
+let lists =  document.getElementsByClassName('nav-item');
+for(let i = 0; i < lists.length; i++){
+  lists[i].classList.remove('active');
+}
+  elem.classList.add('active');
+}

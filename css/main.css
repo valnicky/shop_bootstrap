@@ -10,7 +10,7 @@ body,
 }
 
 .main {
-    background-color: #fff;
+    background-color: #ffe;
     position: relative;
     box-shadow: 0 0 4px rgba(0, 0, 50, .3);
 }
@@ -43,6 +43,15 @@ header {
 
 nav {
     padding-top: 2em;
+    box-shadow: 0px 3px 15px;
+    background-color: #a593c2;
+    font-weight: 900;
+}
+
+nav>ul>li>a:hover {
+    color: brown;
+    transition: 3s;
+    transition-timing-function: steps(4, end);
 }
 
 .header__list li {
