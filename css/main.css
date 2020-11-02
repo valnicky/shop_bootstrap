@@ -19,7 +19,6 @@ body,
     color: grey;
     background-color: #fff;
     position: absolute;
-    top: 1em;
     right: 1em;
 }
 
@@ -119,4 +118,10 @@ nav>ul>li>a:hover {
 .modal-content {
     border-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+@media screen and (max-width:768px) {
+    .header__list .nav-item {
+        display: none;
+    }
 }
