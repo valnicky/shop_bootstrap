@@ -60,6 +60,18 @@ nav form img {
     width: 25px;
 }
 
+.navbar-nav {
+    background-color: #343a40;
+}
+
+.navbar-nav li {
+    border-bottom: 0.5px solid #eee;
+}
+
+#navbarSupportedContent {
+    z-index: 1000;
+}
+
 .header__list li {
     display: inline-block;
     margin-left: 2em;
@@ -127,8 +139,28 @@ nav form img {
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
+
+/*all products*/
+
+#grow ul li img {
+    width: 250px;
+}
+
+@media screen and (max-width: 991px) {
+    #grow button {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .header__list .nav-item {
         display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .toast {
+        top: 183px;
+        font-size: 10px;
     }
 }

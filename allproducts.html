@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid main" id="grow">
+    <div class="container main" id="grow">
         <header class=" bg-gradient">
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
                 <a class="navbar-brand" href="index.html">
@@ -25,12 +25,12 @@
   </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item nav-link active" onclick="getActive(this)">
+                    <ul class="navbar-nav mr-auto col-12 col-sm-5 ">
+                        <li class="nav-item nav-link active px-3" onclick="getActive(this)">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
 
-                        <li class="nav-item dropdown nav-link">
+                        <li class="nav-item dropdown nav-link px-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           All products
         </a>
@@ -41,7 +41,7 @@
                                 <a class="dropdown-item" href="breadandpastries.html">Bread, pastries and sweets</a>
                             </div>
                         </li>
-                        <li class="nav-item nav-link" onclick="getActive(this)"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item nav-link px-3" onclick="getActive(this)"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search our products" aria-label="Search">
@@ -54,46 +54,40 @@
             </div>
         </header>
 
-        <div class="pl-5 pr-5 ">
-
+        <div class="px-md-5 px-0">
             <h2 class="sansita mt-3 mb-5 font-weight-bold">All kinds of Products</h2>
-
             <div class="d-flex flex-column my-3 px-3">
                 <button type="button" onclick="viewPopovers()" class="btn btn-secondary">View Popovers</button>
             </div>
-
-            <ul class="w-100">
-
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/croissant.jpg" alt="pastries">
+            <ul class="w-100 p-0">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row ">
+                        <div class=" m-0">
+                            <img class="shadow " src="images/croissant.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Croissants</h3>
                             <p class="text-secondary">Crisp on the outside, soft on the inside and warm from the oven.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$6.50</p>
-                        <button id="pop1" class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about croissants" data-content="You can see <b>more</b> about croissants here.<img src='images/croissant.jpg' class='img-fluid'>">Learn more</button>
+                        <button id="pop1" class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about croissants" data-content="You can see <b>more</b> about croissants here.
+                        <img src='images/croissant.jpg' class='img-fluid'/>">Learn more</button>
                     </div>
                 </li>
 
-
-
-
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/stars640.png" alt="stars">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class=" shadow" src="images/stars640.png" alt="stars">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Stars</h3>
                             <p class="text-secondary">Sweet pleasure.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5 p-0">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$10.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" title="More about pastries stars" data-content="You can see <b>more about pastries stars</b> here <img src='images/stars640.png' class='img-fluid'>" data-toggle="modal" data-target="#pie1">View recipe</button>
                     </div>
@@ -131,193 +125,193 @@
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
                     <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/pastries.jpg" alt="pastries">
+                        <div class="w-md-25 m-0">
+                            <img class=" shadow " src="images/pastries.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Pastries</h3>
                             <p class="text-secondary">A dough of flour, water and shortening</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$10.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about pastries" data-content="You can see <b>more</b> about pastries here.<img src='images/pastries.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class=" shadow w-100" src="images/cereal_bread.jpg" alt="cereal_bread">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9  col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class=" shadow " src="images/cereal_bread.jpg" alt="cereal_bread">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Cereal Bread</h3>
                             <p class="text-secondary">Bread made with whole grain cereal.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5 p-0">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$4.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about cereal bread" data-content="You can see <b>more</b> about cereal bread here <img src='images/cereal_bread.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3  pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class=" shadow w-100" src="images/bread.jpg" alt="bread">
+                <li class="d-flex w-100 pb-3  pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class=" shadow" src="images/bread.jpg" alt="bread">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">White Bread</h3>
                             <p class="text-secondary">Yummy White Bread.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5 p-0">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about white bread" data-content="You can see <b>more</b> about white bread here <img src='images/bread.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3  pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/american.jpg" alt="pizza">
+                <li class="d-flex w-100 pb-3  pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/american.jpg" alt="pizza">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Pizza</h3>
                             <p class="text-secondary">American Pizza.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5 ">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$15.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about american pizzas" data-content="You can see <b>more</b> about pizzas here.<img src='images/american.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3  pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class=" shadow w-100" src="images/olives.jpg" alt="olives">
+                <li class="d-flex w-100 pb-3  pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class=" shadow " src="images/olives.jpg" alt="olives">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Olives</h3>
                             <p class="text-secondary">Olives of Ciudad Real.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$5.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about olives" data-content="You can see <b>more</b> about olives here.<img src='images/olives.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3  pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/appetite.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3  pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/appetite.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Appetite</h3>
                             <p class="text-secondary">Appetite.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$1.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about spicy" data-content="You can see <b>more</b> abou spice food here.<img src='images/appetite.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/avocado.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/avocado.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Avocado</h3>
                             <p class="text-secondary">Avocado.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$6.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about avocado" data-content="You can see <b>more</b> about avocados here.<img src='images/avocado.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3  flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/apple.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3 pt-3  flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/apple.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Apple</h3>
                             <p class="text-secondary">Apples bio</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about apples" data-content="You can see <b>more</b> about apples here.<img src='images/apple.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/broccoli.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/broccoli.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Broccoli</h3>
                             <p class="text-secondary">Broccoli.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$1.80</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about broccoli" data-content="You can see <b>more</b> about broccoli here.<img src='images/broccoli.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/butter.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/butter.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Butter</h3>
                             <p class="text-secondary">Butter.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.70</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about butter" data-content="You can see <b>more</b> about butter here.<img src='images/butter.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3  pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/donuts.jpg" alt="pastries">
+                <li class="d-flex w-100 pb-3  pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/donuts.jpg" alt="pastries">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Donuts</h3>
                             <p class="text-secondary">Donuts</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.80</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about donuts" data-content="You can see <b>more</b> about donuts here.<img src='images/donuts.jpg' class='img-fluid'>">Learn more</button>
                     </div>
                 </li>
 
-                <li class="d-flex w-100 pb-3 pt-3 flex-row border-bottom">
-                    <div class="col-9 d-flex mr-25 ml-0 flex-row">
-                        <div class="w-25 m-0">
-                            <img class="shadow w-100" src="images/banana.jpg" alt="banana">
+                <li class="d-flex w-100 pb-3 pt-3 flex-md-row flex-column border-bottom">
+                    <div class="col-md-9 col-12 d-flex mr-25 ml-0 flex-row">
+                        <div class="w-md-25 m-0">
+                            <img class="shadow " src="images/banana.jpg" alt="banana">
                         </div>
-                        <div class="ml-3 w-40">
+                        <div class="ml-3 w-md-40">
                             <h3 class="font-weight-bold">Banana</h3>
                             <p class="text-secondary">Banana of Canary Island.</p>
                         </div>
                     </div>
-                    <div class="col-3 pl-5">
+                    <div class="col-md-3 pl-md-5">
                         <p class="w-100 bg-success text-white py-2 text-center rounded font-weight-bold btn">$2.50</p>
                         <button class="w-100 small-btn btn-outline-secondary btn" data-toggle="popover" title="More about bananas" data-content="You can see <b>more</b> about bananas here.<img src='images/banana.jpg' class='img-fluid'>">Learn more</button>
                     </div>
