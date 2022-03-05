@@ -164,3 +164,12 @@ nav form img {
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 475px) {
+    #grow ul li {
+        font-size: 12px;
+    }
+    #grow ul li img {
+        width: 150px;
+    }
+}
