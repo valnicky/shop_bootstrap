@@ -33,7 +33,7 @@ header {
 }
 
 .header__logo img {
-    width: 100%;
+    width: 45px;
 }
 
 .sansita {
@@ -43,14 +43,23 @@ header {
 nav {
     padding-top: 2em;
     /*box-shadow: 0px 3px 15px;*/
-    background-color: #a593c2;
+    background-color: #3f3f3d;
     font-weight: 900;
+    height: 75px;
+}
+
+nav a h1 img {
+    width: 30px;
 }
 
 nav>ul>li>a:hover {
     color: brown;
     transition: 3s;
     transition-timing-function: steps(4, end);
+}
+
+nav form img {
+    width: 25px;
 }
 
 .header__list li {

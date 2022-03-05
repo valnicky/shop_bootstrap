@@ -16,29 +16,41 @@
     <!-- navbar-->
     <div class="container-fluid main" id="grow">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="header__logo col-lg-1">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+                <a class="navbar-brand" href="#">
                     <h1><img src="images/home.ico" alt=""></h1>
-                </div>
-                <ul class="header__list navbar-nav  col-lg-6">
-                    <li class="nav-item active" onclick="getActive(this)"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></span></a> </li>
-                    <li class="nav-item" onclick="getActive(this)"><a class="nav-link" href="allproducts.html">All products</a></li>
-                    <li class="nav-item" onclick="getActive(this)"><a class="nav-link" href="about.html">About</a></li>
-                </ul>
-                <form class="right col-lg-3">
-                    <input type="search" class="searchbox" placeholder="Search our store" name="" id="">
-                    <button type="submit"><img src="images/search.ico" alt=""></button>
-                </form>
-                <div class=" d-flex flex-row letters col-lg-2">
-                    <button class="mt-4 small btn btn-secondary" onclick="besmall()">A</button>
-                    <button class="mt-3 mx-5 medium btn btn-secondary" onclick="bemedium()">A</button>
-                    <button class="mt-2 large btn btn-secondary" onclick="belarge()">A</button>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item nav-link active" onclick="getActive(this)">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown nav-link">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All products
+        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="allproducts.html" onclick="getActive(this)">All products</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="fruitsandvegetables.html">Fruits and vegetables</a>
+                                <a class="dropdown-item" href="breadandpastries.html">Bread, pastries and sweets</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-link" onclick="getActive(this)"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search our products" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="images/search.ico" alt=""></button>
+                    </form>
                 </div>
             </nav>
-
             <!-- banner-->
             <div class="header__img w-100 h-25 d-flex flex-row banner px-0 justify-content-end"><img src="./images/banner.jpg" class="w-100 h-100" alt="pastries"></div>
-
         </header>
 
         <!--3 blocks options-->
@@ -47,12 +59,12 @@
                 <div class=" toast-header">
                     <img class=" img-fluid fas fa-bell" src="images/bell-solid.svg" style="width: 1rem;" ; alt="">
 
-                    <strong class="mr-auto">Monthy Sale</strong>
+                    <strong class="mr-auto text-dark">Monthy Sale</strong>
                     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
                         <span>&times;</span>
                     </button>
                 </div>
-                <div class="toast-body">Check out our sale on our products!</div>
+                <div class="toast-body text-dark">Check out our sale on our products!</div>
             </div>
 
             <div class="products d-flex flex-column mt-5 mb-3 px-5">
@@ -72,7 +84,7 @@
 
                     <div class="btn-group">
                         <a class="btn btn-outline-info btn-sm" href="allproducts.html" data-toggle="tooltip" title="View a list of <b><i>all</i></b> our products">All Products</a>
-                        <button class="btn btn-outline-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown"><span class="sr-only">Toggle dropdown</span></button>
+                        <button class="btn btn-outline-info bold dropdown-toggle btn-sm" type="button" data-toggle="dropdown"><span class="sr-only">Toggle dropdown</span></button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a href="fruitsandvegetables.html" class="dropdown-item">Fruits and Vegetables</a>
                             <div class="dropdown-divider"></div>
